@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "fourPicsOneWord",
-    "slug": "fourPicsOneWord",
-    "version": "1.0.0",
+    "name": "fourPicsOneWordKobe",
+    "slug": "fourPicsOneWordKobe",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,11 +15,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.KobeSmallman.fourPicsOneWordKobe"
     },
     "android": {
+      "package": "com.KobeSmallman.fourPicsOneWordKobe",
+      "versionCode": 10000,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
