@@ -8,12 +8,15 @@ import DashboardScreen from './screens/DashboardScreen';
 import GameScreen from './screens/GameScreen';
 import LeaderboardScreen from './screens/LeaderboardScreen';
 import RegisterScreen from './screens/RegisterScreen';
+import * as SplashScreen from 'expo-splash-screen';
+
+SplashScreen.preventAutoHideAsync();
+setTimeout(SplashScreen.hideAsync, 3000);
 //initializations
 const Stack = createStackNavigator();
 const UserContext = createContext(null);
 
 export const useUser = () => useContext(UserContext);
-
 //Custom navigation theme
 const MyTheme = {
   ...DefaultTheme,
